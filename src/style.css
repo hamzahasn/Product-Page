@@ -1,15 +1,48 @@
+
+
 /* RESETS
     Here you put styles that modify the original behavior CSS/HTML had,
     for example: list elements come with a little circle that nobody uses anymore.
  */
+ body {
+     font-family: monospace;
+ }
+ ul li{list-style: none;}
 ul{margin: 0; padding:0;}
-ul li{list-style: none;}
-
 /* 
     BEHAVIORAL STYLES
     for example: .horizontal, .container, .p-1 (for padding one)
 */
-.p-1{ padding: 10px; }
+a { color: black;} a:visted {color: black;} a:link {
+  text-decoration: none;
+}
+.p-1 {padding: 10px; }
+.container {
+    max-width: 900px;
+    margin: auto;
+    }
+button {background: black; text-transform: uppercase; color: white; padding: 10px 20px; margin-top: 20px;}
+.img {
+    margin: 5px;
+    width: 30%;
+    }
+
+    .layout {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .layout ul li {margin-left: 10px;}
+    .layout.layout-left {justify-content: flex-start;}
+    .layout.layout-left li {margin-right: 10px;}
+    .layout.horizontal { flex-direction: row;}
+
+    .layout.horizontal .img {flex-grow:1; margin-top: 10px;}
+    .layout.horizontal .img:first-child {margin-left: 0;}
+    .w-100 { width: 100%;}
+    .w-50 { 
+        width: 50%; 
+    }
 
 
 
@@ -18,3 +51,12 @@ ul li{list-style: none;}
     SPECIFIC TO YOUR WEBSITE 
     The more senior you become the less you have specific styles
 */
+.navbar {
+    border-bottom: 1px #bdbdbd solid;
+}
+.gallery .img {height: 120px;}
+.logo { flex-grow: 1;}
+.menu {flex-grow: 2;}
+.breadcrumb {text-transform: uppercase;}
+.price {font-size: 20px;}
+.description {border-top: 1px solid #bdbdbd; margin-top: 10px;}
